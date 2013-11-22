@@ -1,4 +1,18 @@
-set nocompatible               " be iMproved
+set nocompatible                  " be iMproved
+
+syntax enable                     " Turn on syntax highlighting.
+
+set title                         " Set the terminal's title
+
+set ignorecase                    " Case-insensitive searching.
+set smartcase                     " But case-sensitive if expression contains a capital letter.
+
+set number                        " Show line numbers.
+set ruler                         " Show cursor position.
+
+set visualbell                    " No beeping.
+
+
 syntax on                      " https://github.com/gmarik/vundle/issues/210
 filetype off                   " required!
 
@@ -39,3 +53,4 @@ filetype plugin indent on     " required!
 :set mouse=a
 " NERDTree shortcut
 map <F2> :NERDTreeToggle<CR>
+filetype plugin indent on
