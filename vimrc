@@ -7,7 +7,6 @@ set title                         " Set the terminal's title
 set ignorecase                    " Case-insensitive searching.
 set smartcase                     " But case-sensitive if expression contains a capital letter.
 
-set number                        " Show line numbers.
 set ruler                         " Show cursor position.
 
 set visualbell                    " No beeping.
