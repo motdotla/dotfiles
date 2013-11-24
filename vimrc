@@ -29,6 +29,7 @@ Bundle 'gmarik/vundle'
 " non github repos
 " git repos on your local machine (ie. when working on your own plugin)
 " http://wowkhmer.com/2012/04/08/keep-your-vimrc-concise-and-vundle-managing-dependencies/
+Bundle 'jnwhiteh/vim-golang'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
