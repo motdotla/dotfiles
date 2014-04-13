@@ -54,3 +54,5 @@ filetype plugin indent on     " required!
 " NERDTree shortcut
 map <F2> :NERDTreeToggle<CR>
 filetype plugin indent on
+" gofmt on save
+au FileType go au BufWritePre <buffer> Fmt
