@@ -33,6 +33,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
+Bundle 'neowit/vim-force.com'
 
 filetype plugin indent on     " required!
 "
