@@ -34,6 +34,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
 Bundle 'neowit/vim-force.com'
+Bundle 'msanders/snipmate.vim'
 
 filetype plugin indent on     " required!
 "
@@ -45,6 +46,14 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+"
+
+" force.com plugin settings
+let g:apex_backup_folder        ='~/.force.com/backup'
+let g:apex_temp_folder          ='~/.force.com/temp'
+let g:apex_deployment_error_log ='~/.force.com/error.log'
+let g:apex_properties_folder    ='~/.force.com/properties'
+let g:apex_tooling_force_dot_com_path = '~/.force.com/tooling-force.com.jar'
 
 " Tab width 2 soft
 :set expandtab
