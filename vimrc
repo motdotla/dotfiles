@@ -15,12 +15,11 @@ set visualbell                    " No beeping.
 syntax on                      " https://github.com/gmarik/vundle/issues/210
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/vundle'
 
 " My Bundles here:
 "
@@ -29,31 +28,23 @@ Bundle 'gmarik/vundle'
 " non github repos
 " git repos on your local machine (ie. when working on your own plugin)
 " http://wowkhmer.com/2012/04/08/keep-your-vimrc-concise-and-vundle-managing-dependencies/
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'kien/ctrlp.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'scrooloose/nerdtree'
-Bundle 'neowit/vim-force.com'
-Bundle 'msanders/snipmate.vim'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'kien/ctrlp.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/nerdtree'
+Plugin 'msanders/snipmate.vim'
 
 filetype plugin indent on     " required!
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 "
-
-" force.com plugin settings
-let g:apex_backup_folder        ='~/.force.com/backup'
-let g:apex_temp_folder          ='~/.force.com/temp'
-let g:apex_deployment_error_log ='~/.force.com/error.log'
-let g:apex_properties_folder    ='~/.force.com/properties'
-let g:apex_tooling_force_dot_com_path = '~/.force.com/tooling-force.com.jar'
 
 " Tab width 2 soft
 :set expandtab
