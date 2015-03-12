@@ -11,6 +11,8 @@ set ruler                         " Show cursor position.
 
 set visualbell                    " No beeping.
 
+set colorcolumn=80                " arbitrary 80 column line
+
 
 syntax on                      " https://github.com/gmarik/vundle/issues/210
 filetype off                   " required!
@@ -34,6 +36,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
 Plugin 'msanders/snipmate.vim'
 
+" All of your Plugins must be added before the following line
+call vundle#end()
 filetype plugin indent on     " required!
 "
 " Brief help
@@ -50,6 +54,8 @@ filetype plugin indent on     " required!
 :set expandtab
 :set tabstop=2
 :set shiftwidth=2
+" Set backspace like normal
+set backspace=indent,eol,start
 " Mouse to resize windows
 :set mouse=a
 " NERDTree shortcut
