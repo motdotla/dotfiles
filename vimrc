@@ -35,6 +35,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
 Plugin 'msanders/snipmate.vim'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -51,16 +52,20 @@ filetype plugin indent on     " required!
 "
 
 " Tab width 2 soft
+:set paste
 :set expandtab
 :set tabstop=2
 :set shiftwidth=2
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 " Set backspace like normal
 set backspace=indent,eol,start
-" Mouse to resize windows
-:set mouse=a
+" http://stackoverflow.com/questions/33077429/vim-enters-into-visual-mode-on-selecting-text-after-el-capitan-update
+:set mouse=
 " NERDTree shortcut
 map <F2> :NERDTreeToggle<CR>
 filetype plugin indent on
 " gofmt on save
 au FileType go au BufWritePre <buffer> Fmt
 " au FileType javascript setl tabstop=4 shiftwidth=4
+au BufRead,BufNewFile *.mote set filetype=mote
+au BufRead,BufNewFile *.ejs set filetype=html
