@@ -36,6 +36,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
 Plugin 'msanders/snipmate.vim'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-eunuch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -50,6 +52,12 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 "
+
+" solorized theme
+syntax enable
+set background=dark
+" set background=light
+colorscheme solarized
 
 " Tab width 2 soft
 :set paste
@@ -69,3 +77,5 @@ au FileType go au BufWritePre <buffer> Fmt
 " au FileType javascript setl tabstop=4 shiftwidth=4
 au BufRead,BufNewFile *.mote set filetype=mote
 au BufRead,BufNewFile *.ejs set filetype=html
+
+com! FormatJSON %!python -c "import json, sys; print json.dumps(json.load(sys.stdin), indent=2)"
